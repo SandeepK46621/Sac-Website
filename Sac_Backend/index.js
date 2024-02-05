@@ -5,7 +5,8 @@ const {Event, Gallery,  Members, News}= require("./src/database/db.js");
 app.use(cors());
 app.use("/admin", adminRoute);
 app.use(express.json());
-mongoose.connect("mongodb+srv://sandeep46621:w5tqFtSvAoG8T5v2@cluster0.dmocucf.mongodb.net/Sac",{  useNewUrlParser: false,useUnifiedTopology: true,})
+// add an mongoose url
+mongoose.connect("",{  useNewUrlParser: false,useUnifiedTopology: true,})
 
 
 app.get("/gallery",async(req,res)=>{ 
